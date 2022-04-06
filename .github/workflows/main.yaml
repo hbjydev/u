@@ -12,8 +12,9 @@ jobs:
         with:
           go-version: 1.18
       - run: |
-          go build -o u-linux main.go
+          go build -o u main.go
+          chmod +x u
       - uses: actions/upload-artifact@v3
         with:
-          name: u-linux
-          path: u-linux
+          name: u
+          path: u
