@@ -1,0 +1,19 @@
+---
+name: "Build"
+on: [push]
+
+jobs:
+  build:
+    name: "Build"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-go@v2
+        with:
+          go-version: 1.18
+      - run: |
+          go build -o u-linux main.go
+      - uses: actions/upload-artifact@v3
+        with:
+          name: u-linux
+          path: u-linux
