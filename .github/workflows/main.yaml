@@ -17,4 +17,6 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: u
-          path: u
+          path: |
+            u
+            LICENSE
