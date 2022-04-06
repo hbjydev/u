@@ -14,7 +14,11 @@ import (
 func main() {
 	log.SetFlags(0)
 
-	Z.Aliases = map[string][]string{}
+	Z.Aliases = map[string][]string{
+		"isosec": {"uniq", "isosec"},
+		"uuid":   {"uniq", "uuid"},
+		"epoch":  {"uniq", "second"},
+	}
 
 	Cmd.Run()
 }
