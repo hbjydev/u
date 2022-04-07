@@ -3,6 +3,7 @@ package main
 import (
 	"log"
 
+	"github.com/hbjydev/zet"
 	"github.com/rwxrob/bonzai/help"
 	Z "github.com/rwxrob/bonzai/z"
 	"github.com/rwxrob/config"
@@ -30,6 +31,6 @@ var Cmd = &Z.Cmd{
 	Copyright: `Copyright 2022 Hayden Young`,
 	License:   `Apache-2.0`,
 	Commands: []*Z.Cmd{
-		help.Cmd, config.Cmd, y2j.Cmd, uniq.Cmd, yq.Cmd,
+		help.Cmd, config.Cmd, y2j.Cmd, uniq.Cmd, yq.Cmd, zet.Cmd,
 	},
 }

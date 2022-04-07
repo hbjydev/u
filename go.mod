@@ -3,6 +3,7 @@ module github.com/hbjydev/u
 go 1.18
 
 require (
+	github.com/hbjydev/zet v0.0.3
 	github.com/rwxrob/bonzai v0.1.4
 	github.com/rwxrob/config v0.3.5
 	github.com/rwxrob/uniq v0.1.4
