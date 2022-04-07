@@ -3,6 +3,7 @@ module github.com/hbjydev/u
 go 1.18
 
 require (
+	github.com/hbjydev/zetman v0.0.2
 	github.com/rwxrob/bonzai v0.1.4
 	github.com/rwxrob/config v0.3.5
 	github.com/rwxrob/uniq v0.1.4
@@ -28,6 +29,7 @@ require (
 	github.com/rwxrob/structs v0.5.1 // indirect
 	github.com/rwxrob/term v0.2.5 // indirect
 	github.com/rwxrob/to v0.4.5 // indirect
+	github.com/rwxrob/uniq-go v0.4.3 // indirect
 	github.com/timtadh/data-structures v0.5.3 // indirect
 	github.com/timtadh/lexmachine v0.2.2 // indirect
 	golang.org/x/crypto v0.0.0-20220331220935-ae2d96664a29 // indirect

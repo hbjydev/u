@@ -3,6 +3,7 @@ package main
 import (
 	"log"
 
+	"github.com/hbjydev/zetman"
 	"github.com/rwxrob/bonzai/help"
 	Z "github.com/rwxrob/bonzai/z"
 	"github.com/rwxrob/config"
@@ -18,6 +19,7 @@ func main() {
 		"isosec": {"uniq", "isosec"},
 		"uuid":   {"uniq", "uuid"},
 		"epoch":  {"uniq", "second"},
+		"zet":    {"zetman"},
 	}
 
 	Cmd.Run()
@@ -30,6 +32,6 @@ var Cmd = &Z.Cmd{
 	Copyright: `Copyright 2022 Hayden Young`,
 	License:   `Apache-2.0`,
 	Commands: []*Z.Cmd{
-		help.Cmd, config.Cmd, y2j.Cmd, uniq.Cmd, yq.Cmd,
+		help.Cmd, config.Cmd, y2j.Cmd, uniq.Cmd, yq.Cmd, zetman.Cmd,
 	},
 }
