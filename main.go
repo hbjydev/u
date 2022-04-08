@@ -28,7 +28,7 @@ func main() {
 var Cmd = &Z.Cmd{
 	Name:      `u`,
 	Summary:   `hbjydev's bonzai command tree`,
-	Version:   `v0.0.3`,
+	Version:   `v0.0.4`,
 	Copyright: `Copyright 2022 Hayden Young`,
 	License:   `Apache-2.0`,
 	Commands: []*Z.Cmd{
